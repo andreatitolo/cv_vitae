@@ -1,0 +1,203 @@
+---
+name: Andrea
+surname: Titolo
+position: "Research Fellow"
+address: "Department of Ancient World Studies, Sapienza University of Rome"
+www: andreatitolo.rbind.io
+email: "andrea.titolo@uniroma1.it"
+orcid: 0000-0002-7322-8634
+#researchgate: Andrea-Titolo5
+github: andreatitolo
+linkedin: andreatitolo_
+#twitter: whysofurious1
+headcolor: 990000  # for black color use 414141 
+date: "`r format(Sys.time(), '%B %Y')`"
+csl: styles/apa-cv.csl # change this if you want to use other citation styles
+output: 
+  vitae::awesomecv:
+    pandoc_args: ["--lua-filter=lua/strong.lua"] 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae);library(tibble)
+#rmarkdown::pandoc_version()
+
+source(file = here::here("r","data.R"), encoding = "UTF-8")
+```
+
+# Research Interests
+
+Landscape Archaeology; Remote Sensing; GIS; Quantitative Analyses; Near Eastern Archaeology
+
+# Current Position
+```{r}
+education %>% 
+  filter(grepl("present", Year)) %>% # This ensures to always select present occupations
+    detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Degree,
+    where = Where,
+    why = detail
+  )
+```
+
+
+# Education
+
+```{r}
+education %>%
+  filter(!grepl("present", Year)) %>% # Remove present occupation
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Degree,
+    where = Where,
+    why = detail
+  )
+```
+
+# Other Certified Educational Experiences
+
+```{r}
+education_other %>%
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Degree,
+    where = Where,
+    why = detail
+  )
+
+```
+
+
+\pagebreak 
+
+# Fieldwork
+```{r}
+fieldwork %>% 
+  detailed_entries(
+    what = Expedition,
+    when = Year,
+    with = Type,
+    where = Where,
+    why = detail
+  )
+```
+
+
+# Publications
+
+```{r}
+bibliography_entries(here::here("bib", "Published.bib"))
+```
+
+# Book Chapters
+
+```{r}
+bibliography_entries(here::here("bib", "Book_chapters.bib"))
+```
+
+# Work in Progress 
+
+```{r}
+bibliography_entries(here::here("bib", "In_progress.bib"))
+```
+
+# Conferences and Congresses
+
+```{r}
+bibliography_entries(here::here("bib", "Presentations.bib"))
+```
+
+# Organized Conferences
+
+```{r}
+conferences %>% 
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Conference,
+    where = Where,
+    why = detail
+  )
+```
+
+
+# Awarded Scholarships
+
+```{r}
+scholarships %>% 
+  detailed_entries(
+    where = Year,
+    with = Name, 
+    what = Institution,
+    why = Supp,
+    when = detail
+  ) 
+```
+
+# Other Working Experiences
+```{r}
+working_experiences %>% 
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Experience,
+    where = Where,
+    why = detail
+  )
+```
+
+# Online Certified Educational Experiences
+
+```{r}
+education_online %>% 
+    detailed_entries(
+    what = Teacher,
+    when = Year,
+    with = Course,
+  )
+
+```
+
+# Language Proficency
+
+```{r}
+languages %>% 
+    detailed_entries(
+    what = Certificate,
+    with = Language,
+    why = detail
+  )
+```
+
+# Computer and Technical Skills
+
+```{r}
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills,
+    why = details
+  )
+```
+
+
+# References
+
+```{r}
+references %>%
+  detailed_entries(where = Contact,
+                   with = Name,
+                   what = Title) 
+```
+
+\vspace*{\fill}
+*Signature*
+```{r, out.width="25%"}
+knitr::include_graphics(here::here("img/signature.png"))
+```
+
