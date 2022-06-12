@@ -25,6 +25,7 @@ education_other <- tribble(
 
 education_online <- tribble(
   ~ Course, ~Year, ~Teacher,
+  "End-to-End Google Earth Engine", "03/2022", "Teacher: Ujaval Ghandi,Spatial Thoughts",
   "Introduction to Google Earth Engine", "04/2020", "Teacher: Dr. Alemayehu Midekisa, Geospatial Data Scientist, United State Geological Survey (USGS) - EROS",
   "Learning the FOSS4g Stack: QGIS 3.0 Desktop", "04/2020", "Teacher: Arthur J. Lembo Jr., Professor, University of Salisbury, Department of Geography and Geoscience",
   "Learning the FOSS4g Stack: Geoserver", "03/2020", "Teacher: Arthur J. Lembo Jr., Professor, University of Salisbury, Department of Geography and Geoscience", 
@@ -69,6 +70,12 @@ scholarships <- tribble(
   '2019', "Mobility of PhD Students", "Sapienza University of Rome", "Project Name: MATTER", "Project Members: A. Titolo, L. Volpi",
   '2019', "Mobility of PhD Students", "Sapienza University of Rome", "Project Name: Tua-ViOr", "Project Members: A.Caselli, A. Jabbour, I. Sayegh, A. Titolo",
 ) 
+
+
+teaching_experiences <- tribble(
+  ~ Experience, ~ Year, ~ Institution, ~ Where, ~detail,
+  "Students Lab Teaching", "02/2022 - 06/2022", "Department of Antiquities", "Sapienza University of Rome", "Lab design; weekly lectures on Landscape Archaeology and GIS, with hands-on interactive teaching of QGIS; office hours",  
+)
 
 
 working_experiences <- tribble(

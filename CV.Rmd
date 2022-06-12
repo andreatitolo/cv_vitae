@@ -139,6 +139,19 @@ scholarships %>%
   ) 
 ```
 
+# Teaching Experience
+
+```{r}
+teaching_experiences %>% 
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Experience,
+    where = Where,
+    why = detail
+  )
+```
+
 # Other Working Experiences
 ```{r}
 working_experiences %>% 
