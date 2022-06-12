@@ -3,7 +3,7 @@ name: Andrea
 surname: Titolo
 position: "Research Fellow"
 address: "Department of Ancient World Studies, Sapienza University of Rome"
-www: andreatitolo.rbind.io
+www: andreatitolo.com
 email: "andrea.titolo@uniroma1.it"
 orcid: 0000-0002-7322-8634
 #researchgate: Andrea-Titolo5
@@ -88,7 +88,7 @@ fieldwork %>%
 ```
 
 
-# Publications
+# Journal Articles
 
 ```{r}
 bibliography_entries(here::here("bib", "Published.bib"))
