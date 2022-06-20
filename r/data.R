@@ -25,7 +25,7 @@ education_other <- tribble(
 
 education_online <- tribble(
   ~ Course, ~Year, ~Teacher,
-  "End-to-End Google Earth Engine", "03/2022", "Teacher: Ujaval Ghandi,Spatial Thoughts",
+  "End-to-End Google Earth Engine", "03/2022", "Teacher: Ujaval Ghandi, Spatial Thoughts",
   "Introduction to Google Earth Engine", "04/2020", "Teacher: Dr. Alemayehu Midekisa, Geospatial Data Scientist, United State Geological Survey (USGS) - EROS",
   "Learning the FOSS4g Stack: QGIS 3.0 Desktop", "04/2020", "Teacher: Arthur J. Lembo Jr., Professor, University of Salisbury, Department of Geography and Geoscience",
   "Learning the FOSS4g Stack: Geoserver", "03/2020", "Teacher: Arthur J. Lembo Jr., Professor, University of Salisbury, Department of Geography and Geoscience", 
@@ -111,8 +111,8 @@ skills <- tribble(
   "Programming","R, Rstudio, JavaScript, Google Earth Engine, SQL", "Good knowledge of Google Earth Engine and JavaScript aimed at remote sensing analyses and satellite images processing", 
   "Programming","R, Rstudio, JavaScript, Google Earth Engine, SQL", "Knowledge of SQL aimed at spatial analyses and spatal database management", 
   "Version Control", "Knowledge of Git", NA,
-  "Microsoft Office", " Very good knowledge of Excel, PowerPoint, Access, Word", NA,
-  "Graphics Software", "Good knowledge of Photoshop, Illustrator, GIMP, Inkscape", NA
+  "Office", " Very good knowledge of Word Processors, Spreadsheets, and Databases", NA,
+  "Graphics Software", "Good knowledge of photo editing and vector graphics softwares", NA
 )
 
 
