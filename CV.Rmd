@@ -100,10 +100,16 @@ bibliography_entries(here::here("bib", "Published.bib"))
 bibliography_entries(here::here("bib", "Book_chapters.bib"))
 ```
 
-# Work in Progress 
+# In Press 
 
 ```{r}
-bibliography_entries(here::here("bib", "In_progress.bib"))
+bibliography_entries(here::here("bib", "In_press.bib"))
+```
+
+# In Preparation 
+
+```{r}
+bibliography_entries(here::here("bib", "In_preparation.bib"))
 ```
 
 # Conferences and Congresses
