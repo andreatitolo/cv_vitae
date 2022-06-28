@@ -82,7 +82,7 @@ teaching_experiences <- tribble(
 
 working_experiences <- tribble(
   ~ Experience, ~ Year, ~ Institution, ~ Where, ~detail,
-  "Data Entry", "2015-present", "Italian Archaeological Expedition at Nigin", "Dhi-Qar, IR", "Data entry of the archaeological documentation of the Italian Archaeological Expedition to Nigin (Iraq) directed by Prof. D. Nadali (Università di Roma Sapienza) and by Prof. A. Polcaro (Università di Perugia)",
+  "Data Entry", "2015-2020", "Italian Archaeological Expedition at Nigin", "Dhi-Qar, IR", "Data entry of the archaeological documentation of the Italian Archaeological Expedition to Nigin (Iraq) directed by Prof. D. Nadali (Università di Roma Sapienza) and by Prof. A. Polcaro (Università di Perugia)",
   "Students Lab Supervisor", "2017-2020", "Italian Archaeological Expedition at Ebla", "Rome, IT", "Supervisor of a student lab for the Digitalization of the topographical documentation of the Italian Archaeological Expedition in Syria (Tell Mardikh-Ebla), directed by Prof. Paolo Matthiae",
   "Data Entry", "2018", "Lagodekhi Archaeologica Survey Project", "Lagodekhi, GE", "Data entry of the archaeological documentation of the archaeological survey in the province of Lagodekhi (Georgia), directed by Dr Kristen Hopper (Durham University) and Prof. Elena Rova (Ca’ Foscari University of Venice)",
   "Data Entry", "2013", "Archaeological Mission to Cottanello", "Cottanello, IT", "Data entry of the archaeological documentation of the excavation at the “Villa di Cottanello/Collesecco (RI)” directed by Prof. P. Pensabene (Sapienza University of Rome)",

@@ -1,0 +1,222 @@
+---
+name: Andrea
+surname: Titolo
+position: "Assegnista di Ricerca"
+address: "Dipartimento di Scienze dell'antichità, Sapienza Università di Roma"
+www: andreatitolo.com
+email: "andrea.titolo@uniroma1.it"
+orcid: 0000-0002-7322-8634
+#researchgate: Andrea-Titolo5
+github: andreatitolo
+linkedin: andreatitolo_
+#twitter: whysofurious1
+headcolor: 990000  # for black color use 414141 
+date: "`r format(Sys.time(), '%B %Y')`"
+csl: styles/apa-cv.csl # change this if you want to use other citation styles
+output: 
+  vitae::awesomecv:
+    pandoc_args: ["--lua-filter=lua/strong.lua"] 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae);library(tibble)
+#rmarkdown::pandoc_version()
+
+source(file = here::here("r","data_ita.R"), encoding = "UTF-8")
+```
+
+# Interessi di ricerca
+
+Archeologia del paesaggio; Remote Sensing; GIS; Analisi quantitative; Archeologia del Vicino Oriente Antico
+
+# Attuale Posizione Lavorativa
+```{r}
+education %>% 
+  filter(grepl("oggi", Year)) %>% # This ensures to always select present occupations
+    detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Degree,
+    where = Where,
+    why = detail
+  )
+```
+
+
+# Educazione
+
+```{r}
+education %>%
+  filter(!grepl("present", Year)) %>% # Remove present occupation
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Degree,
+    where = Where,
+    why = detail
+  )
+```
+
+# Altre esperienze formative certificate
+
+```{r}
+education_other %>%
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Degree,
+    where = Where,
+    why = detail
+  )
+
+```
+
+
+\pagebreak 
+
+# Lavoro sul campo
+```{r}
+fieldwork %>% 
+  detailed_entries(
+    what = Expedition,
+    when = Year,
+    with = Type,
+    where = Where,
+    why = detail
+  )
+```
+
+
+# Articoli su riviste scientifiche
+
+```{r}
+bibliography_entries(here::here("bib", "Published.bib"))
+```
+
+# Capitoli di libri
+
+```{r}
+bibliography_entries(here::here("bib", "Book_chapters.bib"))
+```
+
+# Lavori in stampa 
+
+```{r}
+bibliography_entries(here::here("bib", "In_press.bib"))
+```
+
+# Lavori in preparazione
+
+```{r}
+bibliography_entries(here::here("bib", "In_preparation.bib"))
+```
+
+# Conferenze e congressi
+
+```{r}
+bibliography_entries(here::here("bib", "Presentations.bib"))
+```
+
+# Conferenze organizzate
+
+```{r}
+conferences %>% 
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Conference,
+    where = Where,
+    why = detail
+  )
+```
+
+
+# Borse di studio vinte
+
+```{r}
+scholarships %>% 
+  detailed_entries(
+    where = Year,
+    with = Name, 
+    what = Institution,
+    why = Supp,
+    when = detail
+  ) 
+```
+
+# Esperienze di insegnamento
+
+```{r}
+teaching_experiences %>% 
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Experience,
+    where = Where,
+    why = detail
+  )
+```
+
+# Altre esperienze lavorative
+```{r}
+working_experiences %>% 
+  detailed_entries(
+    what = Institution,
+    when = Year,
+    with = Experience,
+    where = Where,
+    why = detail
+  )
+```
+
+# Esperienze formative online certificate
+
+```{r}
+education_online %>% 
+    detailed_entries(
+    what = Teacher,
+    when = Year,
+    with = Course,
+  )
+
+```
+
+# Lingue
+
+```{r}
+languages %>% 
+    detailed_entries(
+    what = Certificate,
+    with = Language,
+    why = detail
+  )
+```
+
+# Conoscenze informatiche e tecniche
+
+```{r}
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills,
+    why = details
+  )
+```
+
+
+# Referenze
+
+```{r}
+references %>%
+  detailed_entries(where = Contact,
+                   with = Name,
+                   what = Title) 
+```
+
+\vspace*{\fill}
+*Firma*
+```{r, out.width="25%"}
+knitr::include_graphics(here::here("img/signature.png"))
+```
+
