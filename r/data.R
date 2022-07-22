@@ -25,6 +25,7 @@ education_other <- tribble(
 
 education_online <- tribble(
   ~ Course, ~Year, ~Teacher,
+  "Python Foundation for Spatial Analysis", "07/2022", "Teacher: Ujaval Ghandi, Spatial Thoughts",
   "End-to-End Google Earth Engine", "03/2022", "Teacher: Ujaval Ghandi, Spatial Thoughts",
   "Introduction to Google Earth Engine", "04/2020", "Teacher: Dr. Alemayehu Midekisa, Geospatial Data Scientist, United State Geological Survey (USGS) - EROS",
   "Learning the FOSS4g Stack: QGIS 3.0 Desktop", "04/2020", "Teacher: Arthur J. Lembo Jr., Professor, University of Salisbury, Department of Geography and Geoscience",
