@@ -39,3 +39,7 @@ vignettes/*.pdf
 
 # Old files
 /old
+CVold.pdf
+
+#MacOS
+.DS_Store

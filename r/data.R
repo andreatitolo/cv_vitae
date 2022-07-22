@@ -121,6 +121,6 @@ references <- tribble(
   ~ Name, ~ Title, ~ Contact,
   "Kristen Hopper, Ph.D.", "Assistant Professor (Research) at the University of Durham, Department of Archaeology", " k.a.hopper@durham.ac.uk",
   "Davide Nadali, Ph.D.", "Associate professor in Near Eastern Archaeology at the Sapienza University of Rome, Department of Ancient World Studies", "davide.nadali@uniroma1.it",
-  "Marta D'Andrea, Ph.D.", "Fixed-term research assistant in Archaeology and art history of the Ancient Near East at the Sapienza University of Rome, Department of Ancient World Studies", "marta.dandrea@uniroma1.it",
+  "Marta D'Andrea, Ph.D.", "Assistant Professor in Archaeology and art history of the Ancient Near East at the Sapienza University of Rome, Department of Ancient World Studies", "marta.dandrea@uniroma1.it",
   "Nicolò Marchetti, Ph.D.", "Full Professor of Near Eastern Archaeology at Alma Mater Studiorum – University of Bologna, Department of History and Cultures", " nicolo.marchetti@unibo.it"
 ) 
