@@ -112,6 +112,12 @@ bibliography_entries(here::here("bib", "In_press.bib"))
 bibliography_entries(here::here("bib", "In_preparation.bib"))
 ```
 
+# Tesi di Dottorato (non pubblicata)
+
+````{r}
+bibliography_entries(here::here("bib", "Thesis.bib"))
+```
+
 # Conferenze e congressi
 
 ```{r}

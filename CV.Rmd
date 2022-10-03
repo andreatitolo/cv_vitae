@@ -112,6 +112,12 @@ bibliography_entries(here::here("bib", "In_press.bib"))
 bibliography_entries(here::here("bib", "In_preparation.bib"))
 ```
 
+# PhD Thesis (Unpublished)
+
+```{r}
+bibliography_entries(here::here("bib", "Thesis.bib"))
+```
+
 # Conferences and Congresses
 
 ```{r}
