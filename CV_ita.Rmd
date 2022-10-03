@@ -1,7 +1,7 @@
 ---
 name: Andrea
 surname: Titolo
-position: "Assegnista di Ricerca"
+position: "Assegnista di Ricerca, PhD"
 address: "Dipartimento di Scienze dell'antichità, Sapienza Università di Roma"
 www: andreatitolo.com
 email: "andrea.titolo@uniroma1.it"

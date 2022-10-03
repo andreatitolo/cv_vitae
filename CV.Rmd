@@ -1,7 +1,7 @@
 ---
 name: Andrea
 surname: Titolo
-position: "Research Fellow"
+position: "Research Fellow, PhD"
 address: "Department of Ancient World Studies, Sapienza University of Rome"
 www: andreatitolo.com
 email: "andrea.titolo@uniroma1.it"
