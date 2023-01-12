@@ -1,4 +1,5 @@
-# cv_vitae
+# ⚠️ This repository has moved away from GitHub
 
-Personal CV made and maintained using the [{vitae} R package](https://github.com/mitchelloharawild/vitae), and using a mix of the templates provided by [Han Zhang](https://github.com/HanZhang-psych/CV) and [Bryan Jenks](https://github.com/tallguyjenks/CV).
-Last update: 
+## 👉️ [Personal CV git repository (source code)](https://codeberg.org/titoloandrea/cv_vitae)
+
+Its new home is on [Codeberg](https://codeberg.org/), an independent and ethical not-for-profit git hosting service that’s powered by donations, doesn’t track you, and is hosted in the EU. 
